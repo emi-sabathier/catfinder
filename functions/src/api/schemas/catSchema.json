@@ -1,0 +1,257 @@
+{
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "description": {
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "string"
+    },
+    "updatedAt": {
+      "type": "string"
+    },
+    "publishedAt": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "priceMin": {
+      "type": "number"
+    },
+    "priceMax": {
+      "type": "number"
+    },
+    "race": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "number"
+        },
+        "createdAt": {
+          "type": "string"
+        },
+        "updatedAt": {
+          "type": "string"
+        },
+        "publishedAt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "raceName": {
+          "type": "string"
+        },
+        "country": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "raceName",
+        "country"
+      ]
+    },
+    "sociability": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "number"
+        },
+        "childFriendly": {
+          "type": "number"
+        },
+        "animalsFriendly": {
+          "type": "number"
+        },
+        "personsFriendly": {
+          "type": "number"
+        },
+        "description": {
+          "type": "string"
+        },
+        "createdAt": {
+          "type": "string"
+        },
+        "updatedAt": {
+          "type": "string"
+        },
+        "publishedAt": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "indoorCat": {
+          "type": "boolean"
+        },
+        "outdoorCat": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "id",
+        "childFriendly",
+        "animalsFriendly",
+        "personsFriendly",
+        "indoorCat",
+        "outdoorCat"
+      ]
+    },
+    "behaviour": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "number"
+        },
+        "affectionate": {
+          "type": "number"
+        },
+        "quiet": {
+          "type": "number"
+        },
+        "independant": {
+          "type": "number"
+        },
+        "playful": {
+          "type": "number"
+        },
+        "meowing": {
+          "type": "number"
+        },
+        "behaviour": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "affectionate",
+        "quiet",
+        "independant",
+        "playful",
+        "meowing",
+        "behaviour"
+      ]
+    },
+    "health": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "number"
+        },
+        "lifeMin": {
+          "type": "number"
+        },
+        "lifeMax": {
+          "type": "number"
+        },
+        "health": {
+          "type": "number"
+        },
+        "description": {
+          "type": "string"
+        },
+        "createdAt": {
+          "type": "string"
+        },
+        "updatedAt": {
+          "type": "string"
+        },
+        "publishedAt": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "lifeMin",
+        "lifeMax",
+        "health"
+      ]
+    },
+    "build": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "number"
+        },
+        "shape": {
+          "type": "string"
+        },
+        "fur": {
+          "type": "string"
+        },
+        "furLength": {
+          "type": "string"
+        },
+        "head": {
+          "type": "string"
+        },
+        "eyes": {
+          "type": "string"
+        },
+        "ears": {
+          "type": "string"
+        },
+        "tail": {
+          "type": "string"
+        },
+        "hairLoss": {
+          "type": "string"
+        },
+        "weightMin": {
+          "type": "number"
+        },
+        "weightMax": {
+          "type": "number"
+        },
+        "heightMin": {
+          "type": "number"
+        },
+        "heightMax": {
+          "type": "number"
+        },
+        "hypoallergenic": {
+          "type": "boolean"
+        },
+        "createdAt": {
+          "type": "string"
+        },
+        "updatedAt": {
+          "type": "string"
+        },
+        "publishedAt": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "shape",
+        "fur",
+        "furLength",
+        "head",
+        "eyes",
+        "ears",
+        "tail",
+        "hairLoss",
+        "weightMin",
+        "weightMax",
+        "heightMin",
+        "heightMax",
+        "hypoallergenic"
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "createdAt",
+    "updatedAt",
+    "priceMin",
+    "priceMax"
+  ]
+}

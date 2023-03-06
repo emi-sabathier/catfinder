@@ -1,0 +1,18 @@
+{
+  "name": "workspace",
+  "version": "0.2.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "workspaces": {
+    "nohoist": [
+      "**react-native**"
+    ],
+    "packages": [
+      "functions"
+    ]
+  },
+  "devDependencies": {
+    "prettier": "^2.4.1"
+  }
+}
